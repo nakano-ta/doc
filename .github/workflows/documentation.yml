@@ -2,10 +2,10 @@ name: documentation
 
 on:
   pull_request:
-    branches: [documentation]
+    branches: main
   push:
-    branches: [documentation]
-  workflow_dispatch:  # Action ƒ^ƒu‚©‚ç”CˆÓ‚ÉÀs‚Å‚«‚é‚æ‚¤‚É‚·‚é
+    branches: main
+  workflow_dispatch:  # Action ã‚¿ãƒ–ã‹ã‚‰ä»»æ„ã«å®Ÿè¡Œã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹
 
 jobs:
   checks:
