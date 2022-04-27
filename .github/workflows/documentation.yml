@@ -30,9 +30,10 @@ jobs:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
         with:
           token: ${{ secrets.MACHINE_USER_TOKEN }}
+          persist-credentials: false
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
